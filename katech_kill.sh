@@ -8,7 +8,7 @@ echo "ROS 노드들을 종료합니다..."
 
 # ROS 노드들 종료
 echo "1. ROS 노드 종료 중..."
-rosnode kill -a 2>/dev/null
+# rosnode kill -a 2>/dev/null
 
 sleep 1
 
