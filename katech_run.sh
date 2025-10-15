@@ -20,6 +20,12 @@ source /opt/ros/noetic/setup.bash
 roslaunch ${MCAR_PATH}/launch/katech_test.launch
 exec bash"
 
+# 2. katech_test.launch for slope
+# gnome-terminal --title="Katech Test" -- bash -c "
+# source /opt/ros/noetic/setup.bash
+# roslaunch ${MCAR_PATH}/launch/katech_test.launch use_slope_map:="true"
+# exec bash"
+
 sleep 2
 
 # 3. diagnostic_only.launch
