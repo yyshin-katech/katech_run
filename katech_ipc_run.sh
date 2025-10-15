@@ -8,14 +8,14 @@ SSH_PASS="1"
 echo "원격 ROS 노드들을 실행합니다..."
 
 # 1. roscore 실행
-gnome-terminal --title="Remote Roscore" -- bash -c "
+gnome-terminal --tab --title="Remote Roscore" -- bash -c "
 sshpass -p '${SSH_PASS}' ssh -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} 'roscore'
 exec bash"
 
 sleep 3
 
 # 2. katech_run.sh 실행
-gnome-terminal --title="Remote Katech Run" -- bash -c "
+gnome-terminal --tab --title="Remote Katech Run" -- bash -c "
 sshpass -p '${SSH_PASS}' ssh -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} './katech_run.sh'
 exec bash"
 

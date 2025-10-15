@@ -27,12 +27,4 @@ killall rviz 2>/dev/null
 
 sleep 1
 
-# 관련 터미널 프로세스들 정리
-echo "4. 관련 터미널 정리 중..."
-# 특정 제목의 gnome-terminal 찾아서 종료
-pkill -f "gnome-terminal.*NTRIP"
-pkill -f "gnome-terminal.*Katech"
-pkill -f "gnome-terminal.*Diagnostic"
-pkill -f "gnome-terminal.*RViz"
-
 echo "모든 프로세스가 종료되었습니다."
